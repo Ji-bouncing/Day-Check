@@ -11,3 +11,18 @@ function getInput(){
 
   }
 }
+
+/*Variable class 16 Revision*/
+let newAge = 20;
+newAge -= 10;
+console.log(newAge);
+
+
+/*Input Value Holder Variable*/
+document.querySelector('#checkAge').addEventListener('click',checkAgeValue)
+function checkAgeValue(){
+let inputVal = Number(document.querySelector('#age').value);
+inputVal += 25;
+alert(inputVal);
+
+}
