@@ -26,3 +26,14 @@ inputVal += 25;
 alert(inputVal);
 
 }
+/* Late Night Snacks Hacks*/
+
+document.querySelector('#checkSnacks').addEventListener('click', tellToStop)
+
+function tellToStop(){
+  let num = Number(document.querySelector('#snacks').value)
+ for(let i = 1; i <= num;i++){
+   document.querySelector('#putSnacks').innerText += ' Stop Snacking' 
+ }
+}
+tellToStop();
