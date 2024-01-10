@@ -37,3 +37,12 @@ function tellToStop(){
  }
 }
 tellToStop();
+
+/*Loops Exercise */
+
+function numCount(num){
+  for(let i = 1; i <= num; i++){
+    console.log('I love You')
+  }
+}
+numCount(10);
