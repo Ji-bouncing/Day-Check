@@ -46,3 +46,24 @@ function numCount(num){
   }
 }
 numCount(10);
+
+/*Fizz Buzz Hacks*/
+
+function fizzBuzz(num){
+  for(let i = 1;i <= num;i++){
+  if(i % 3 === 0 && i % 5 === 0){
+    console.log('FizzBuzz')
+  }else if(i % 3 === 0){
+    console.log('Fizz')
+  }else if (i % 5 === 0) {
+    console.log('Buzz')
+  }else{
+    console.log(i)
+  }
+  }
+}
+fizzBuzz(15);
+
+/*Arrays*/
+let movies = ['John Wick','Vanguard','Hicki','ThreeIdiots']
+movies.forEach((x,i) => console.log(x,i));
