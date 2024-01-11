@@ -67,3 +67,7 @@ fizzBuzz(15);
 /*Arrays*/
 let movies = ['John Wick','Vanguard','Hicki','ThreeIdiots']
 movies.forEach((x,i) => console.log(x,i));
+
+let series = ['Episode One','Episode Two','Episode Three','Episode Four'];
+
+series.forEach((x,i,a) => console.log(x,i,a))
