@@ -71,3 +71,16 @@ movies.forEach((x,i) => console.log(x,i));
 let series = ['Episode One','Episode Two','Episode Three','Episode Four'];
 
 series.forEach((x,i,a) => console.log(x,i,a))
+
+
+/*Function that takes in an array*/
+function calcAndAlert(arr){
+  if(arr[0] > arr[arr.lenght-1]){
+    console.log('Hello Good Morning')
+  } else if(arr[0] < arr[arr.length - 1]){
+    console.log('Bye, We close in an hour')
+  }else{
+    console.log('You are late')
+  }
+}
+calcAndAlert([11,9,15,1])
