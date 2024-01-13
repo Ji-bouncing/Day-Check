@@ -84,3 +84,12 @@ function calcAndAlert(arr){
   }
 }
 calcAndAlert([11,9,15,1])
+
+/*Some built in function in array*/
+let nums = [21,35,26,48,90,51,100]
+let sorted = nums.sort((a,b) => a-b )
+console.log(`The smallest number from the array is ${sorted[0]} and the largest number from the array it ${sorted[sorted.length - 1]}` )
+
+let OnlyEvens = arr =>  arr.filter( n => n % 2 === 0)
+
+console.log(OnlyEvens(nums))
