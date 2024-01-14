@@ -93,3 +93,30 @@ console.log(`The smallest number from the array is ${sorted[0]} and the largest 
 let OnlyEvens = arr =>  arr.filter( n => n % 2 === 0)
 
 console.log(OnlyEvens(nums))
+
+/*Sunday Jan 14 Daily Challenge*/
+
+function rockPaperScissors(){
+  let random = Math.random()
+  if(random < .33){
+    return 'Rock'
+  }else if(random < .66){
+    return 'Paper'
+  }else{
+    return 'Scissors'
+  }
+}
+//console.log(rockPaperScissors());
+
+function playGame(playerChoice){
+  let botChoice = rockPaperScissors();
+  if(playerChoice === 'Rock' && botChoice === 'Scissors' || playerChoice === 'Paper' && botChoice === 'Rock' || playerChoice === 'Scissors' && botChoice === 'Paper'){
+   console.log('You win')
+  }else if(botChoice === playerChoice){
+    console.log('You Tied')
+  }else{
+    console.log('You Lose')
+  }
+}
+
+playGame('Rock');
