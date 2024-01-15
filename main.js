@@ -120,3 +120,21 @@ function playGame(playerChoice){
 }
 
 playGame('Rock');
+
+/*Object Exercises*/
+
+function MakeSFCharacter(name,kick, catchPhrase, strength){
+  this.name = name
+  this.kick = kick
+  this.catchPhrase = catchPhrase
+  this.strength = strength
+  this.skill = function(){
+    console.log(`Yoi cannot handle my ${this.catchPhrase}`)
+  }
+  this.finalBlow = function(){
+    console.log(`Haha! take my ${this.kick} kick`)
+  }
+}
+
+let ryu = new MakeSFCharacter('ryu','Strong','Jujustsu','Excellent')
+console.log(ryu)
