@@ -138,3 +138,8 @@ function MakeSFCharacter(name,kick, catchPhrase, strength){
 
 let ryu = new MakeSFCharacter('ryu','Strong','Jujustsu','Excellent')
 console.log(ryu)
+
+
+
+let checkText = 'Do you have a good note?'
+alert(checkText.endsWith('?'))
