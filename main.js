@@ -140,6 +140,19 @@ let ryu = new MakeSFCharacter('ryu','Strong','Jujustsu','Excellent')
 console.log(ryu)
 
 
+/*Jan 16 daily code*/
 
 let checkText = 'Do you have a good note?'
 alert(checkText.endsWith('?'))
+
+
+/*Jan 17 daily code*/
+function takesIn(){
+  let HeadOrTail = Math.random()
+  if(HeadOrTail < .5){
+    return 'Head'
+  }else{
+    return 'Tail'
+  }
+}
+console.log(takesIn())
