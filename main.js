@@ -15,7 +15,7 @@ function getInput(){
 /*Variable class 16 Revision*/
 let newAge = 20;
 newAge -= 10;
-console.log(newAge);
+//console.log(newAge);
 
 
 /*Input Value Holder Variable*/
@@ -23,7 +23,7 @@ document.querySelector('#checkAge').addEventListener('click',checkAgeValue)
 function checkAgeValue(){
 let inputVal = Number(document.querySelector('#age').value);
 inputVal += 25;
-alert(inputVal);
+//alert(inputVal);
 
 }
 /* Late Night Snacks Hacks*/
@@ -36,41 +36,41 @@ function tellToStop(){
    document.querySelector('#putSnacks').innerText += ' Stop Snacking' 
  }
 }
-tellToStop();
+//tellToStop();
 
 /*Loops Exercise */
 
 function numCount(num){
   for(let i = 1; i <= num; i++){
-    console.log('I love You')
+   // console.log('I love You')
   }
 }
-numCount(10);
+//numCount(10);
 
 /*Fizz Buzz Hacks*/
 
 function fizzBuzz(num){
   for(let i = 1;i <= num;i++){
   if(i % 3 === 0 && i % 5 === 0){
-    console.log('FizzBuzz')
+   // console.log('FizzBuzz')
   }else if(i % 3 === 0){
-    console.log('Fizz')
+  //  console.log('Fizz')
   }else if (i % 5 === 0) {
-    console.log('Buzz')
+   // console.log('Buzz')
   }else{
-    console.log(i)
+  //  console.log(i)
   }
   }
 }
-fizzBuzz(15);
+//fizzBuzz(15);
 
 /*Arrays*/
 let movies = ['John Wick','Vanguard','Hicki','ThreeIdiots']
-movies.forEach((x,i) => console.log(x,i));
+//leties.forEach((x,i) => console.log(x,i));
 
 let series = ['Episode One','Episode Two','Episode Three','Episode Four'];
 
-series.forEach((x,i,a) => console.log(x,i,a))
+//series.forEach((x,i,a) => console.log(x,i,a))
 
 
 /*Function that takes in an array*/
@@ -83,16 +83,16 @@ function calcAndAlert(arr){
     console.log('You are late')
   }
 }
-calcAndAlert([11,9,15,1])
+//calcAndAlert([11,9,15,1])
 
 /*Some built in function in array*/
 let nums = [21,35,26,48,90,51,100]
 let sorted = nums.sort((a,b) => a-b )
-console.log(`The smallest number from the array is ${sorted[0]} and the largest number from the array it ${sorted[sorted.length - 1]}` )
+//letsole.log(`The smallest number from the array is ${sorted[0]} and the largest number from the array it ${sorted[sorted.length - 1]}` )
 
 let OnlyEvens = arr =>  arr.filter( n => n % 2 === 0)
 
-console.log(OnlyEvens(nums))
+//console.log(OnlyEvens(nums))
 
 /*Sunday Jan 14 Daily Challenge*/
 
@@ -119,7 +119,7 @@ function playGame(playerChoice){
   }
 }
 
-playGame('Rock');
+//playGame('Rock');
 
 /*Object Exercises*/
 
@@ -137,13 +137,13 @@ function MakeSFCharacter(name,kick, catchPhrase, strength){
 }
 
 let ryu = new MakeSFCharacter('ryu','Strong','Jujustsu','Excellent')
-console.log(ryu)
+//console.log(ryu)
 
 
 /*Jan 16 daily code*/
 
 let checkText = 'Do you have a good note?'
-alert(checkText.endsWith('?'))
+//letrt(checkText.endsWith('?'))
 
 
 /*Jan 17 daily code*/
@@ -155,4 +155,19 @@ function takesIn(){
     return 'Tail'
   }
 }
-console.log(takesIn())
+//console.log(takesIn())
+
+
+//const url = 'https://dog.ceo/api/breeds/image/random'
+const url ='https://newsapi.org/v2/everything?q=keyword&apiKey=1848fed5f696438a94d6fd899e286a10'
+fetch(url)
+.then(res => res.json())
+.then(data => {
+  console.log(data.articles.content)
+  data.articles.forEach( (x) => 
+  document.querySelector('h5').innerText += x
+  )
+})
+.catch(err => {
+  console.log(`error ${err}`)
+})
