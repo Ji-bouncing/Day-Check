@@ -171,3 +171,8 @@ fetch(url)
 .catch(err => {
   console.log(`error ${err}`)
 })
+
+function checkPomodoro(word){
+  console.log( word.split('').reverse().join(''))
+}
+checkPomodoro('love')
