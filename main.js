@@ -176,3 +176,6 @@ function checkPomodoro(word){
   console.log( word.split('').reverse().join(''))
 }
 checkPomodoro('love')
+
+let returnNumSquare = arr => arr.map(x => x**2)
+console.log(returnNumSquare([2,3,5,9]))
