@@ -159,18 +159,18 @@ function takesIn(){
 
 
 //const url = 'https://dog.ceo/api/breeds/image/random'
-const url ='https://newsapi.org/v2/everything?q=keyword&apiKey=1848fed5f696438a94d6fd899e286a10'
-fetch(url)
-.then(res => res.json())
-.then(data => {
-  console.log(data.articles.content)
-  data.articles.forEach( (x) => 
-  document.querySelector('h5').innerText += x
-  )
-})
-.catch(err => {
-  console.log(`error ${err}`)
-})
+//const url ='https://newsapi.org/v2/everything?q=keyword&apiKey=1848fed5f696438a94d6fd899e286a10'
+//fetch(url)
+//.then(res => res.json())
+//.then(data => {
+  //console.log(data.articles.content)
+  //data.articles.forEach( (x) => 
+ // document.querySelector('h5').innerText += x
+//  )
+//})
+//.catch(err => {
+  //console.log(`error ${err}`)
+//})
 
 function checkPomodoro(word){
   console.log( word.split('').reverse().join(''))
@@ -178,4 +178,20 @@ function checkPomodoro(word){
 checkPomodoro('love')
 
 let returnNumSquare = arr => arr.map(x => x**2)
-console.log(returnNumSquare([2,3,5,9]))
+//console.log(returnNumSquare([2,3,5,9]))
+
+function MakePerson(name,height,color,dob,state){
+  this.name = name;
+  this.height = height
+  this.color = color
+  this.dob = dob
+  this.state = state
+  this.talk = function(){
+    console.log('Hello, my name is ${this.nane}')
+  }
+  this.sayState = function(){
+    console.log('I am from ${this.state} state')
+  }
+}
+let Abdullah = new MakePerson('Abdullah',67.5,'Chocolate','Jan 21st','Oyo')
+console.log(Abdullah)
