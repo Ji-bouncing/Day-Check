@@ -195,3 +195,9 @@ function MakePerson(name,height,color,dob,state){
 }
 let Abdullah = new MakePerson('Abdullah',67.5,'Chocolate','Jan 21st','Oyo')
 console.log(Abdullah)
+
+function bookLow(n){
+  let meme = n.split('').reverse().join('')
+  console.log(meme)
+}
+bookLow('man')
