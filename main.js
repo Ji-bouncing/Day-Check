@@ -201,3 +201,18 @@ function bookLow(n){
   console.log(meme)
 }
 bookLow('man')
+
+class StopWatch{
+  constructor(name,brand,color){
+    this.name = name
+    this.brand = brand 
+    this.color = color
+  }
+  yell(){
+    console.log(`Hello! i am made of ${this.brand} brand`)
+  }
+  tellColor(){
+    console.log(`I have different types of color but right now you are seing a ${this.color} version of me`)
+  }
+}
+let gShock = new StopWatch('G-Shock','Apple','Grey')
