@@ -216,3 +216,15 @@ class StopWatch{
   }
 }
 let gShock = new StopWatch('G-Shock','Apple','Grey')
+
+//Pomodoro
+
+function testPomodoro(n){
+  let pomodoro = n.split(' ').reverse().join(' ')
+  if( pomodoro === n){
+    console.log('True')
+  }else{
+    console.log('False')
+  }
+}
+testPomodoro('racecar')
