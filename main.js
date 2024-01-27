@@ -245,5 +245,5 @@ class EspressorMachine{
     console.log('I am now put on ')
   }
 }
-
+let opay = new EspressorMachine('Opay','Apple','Red','Large')
 let jiji = new EspressorMachine('jiji','Apple','Black','Medium')
