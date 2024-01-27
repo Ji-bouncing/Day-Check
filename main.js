@@ -225,6 +225,25 @@ function testPomodoro(n){
     console.log('True')
   }else{
     console.log('False')
+  
+}
+}
+//testPomodoro('racecar')
+
+
+class EspressorMachine{
+  constructor(name,brand,color,size){
+    this.name = name
+    this.brand = brand 
+    this.color = color
+    this.size = size
+  }
+  sound(){
+    console.log('Fiuuuuuuuuuummmmmmmm')
+  }
+  start(){
+    console.log('I am now put on ')
   }
 }
-testPomodoro('racecar')
+
+let jiji = new EspressorMachine('jiji','Apple','Black','Medium')
