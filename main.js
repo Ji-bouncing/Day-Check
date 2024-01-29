@@ -247,3 +247,12 @@ class EspressorMachine{
 }
 let opay = new EspressorMachine('Opay','Apple','Red','Large')
 let jiji = new EspressorMachine('jiji','Apple','Black','Medium')
+
+
+
+//Jan 29 Daily challenge
+function takesInArr(a,b){
+  return a.reduce( (acc,c) => acc + c**2,0 ) > b.reduce((acc,c) => acc + c**3,0)
+}
+
+console.log(takesInArr([10,'5',8,2],['5',8,4,20]))
