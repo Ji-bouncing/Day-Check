@@ -263,3 +263,11 @@ function sortNum(arr){
   console.log(sorted);
 }
 sortNum([10,5,3,20])
+
+
+//jan 31 daily challenge
+function generateRand(){
+  let rand = Math.random()
+  console.log(rand.toFixed(2))
+}
+generateRand()
