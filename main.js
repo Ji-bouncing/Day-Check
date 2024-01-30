@@ -256,3 +256,10 @@ function takesInArr(a,b){
 }
 
 console.log(takesInArr([10,'5',8,2],['5',8,4,20]))
+
+//jan 30 daily challenge
+function sortNum(arr){
+  let sorted = arr.sort( (a,b) => a-b )
+  console.log(sorted);
+}
+sortNum([10,5,3,20])
