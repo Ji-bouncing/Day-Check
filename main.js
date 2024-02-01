@@ -271,3 +271,14 @@ function generateRand(){
   console.log(rand.toFixed(2))
 }
 generateRand()
+
+// Feb 1 daily Challenge
+
+let seriousBussinessMan = {
+  hourlyRate : 250,
+  taxRate : .30,
+  hours  : 180,
+  calculateProfit : function() {
+    return hourlyRate * hours * ( 1-taxRate)
+  }
+}
