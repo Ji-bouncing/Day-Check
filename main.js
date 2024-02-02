@@ -282,3 +282,11 @@ let seriousBussinessMan = {
     return hourlyRate * hours * ( 1-taxRate)
   }
 }
+
+
+//Feb 2 daily challenge
+function tellOpinion(){
+  let opinion = prompt('Do you smoke?',)
+  console.log(`${opinion} , its my choice`);
+}
+tellOpinion()
