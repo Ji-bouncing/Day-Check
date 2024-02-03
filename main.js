@@ -290,3 +290,11 @@ function tellOpinion(){
   console.log(`${opinion} , its my choice`);
 }
 tellOpinion()
+
+//Feb 3 daily challenge
+
+function showDate(){
+  let date = Date()
+  console.log(date)
+}
+showDate()
