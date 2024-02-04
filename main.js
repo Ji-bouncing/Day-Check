@@ -331,3 +331,57 @@ class UniversityOfIbadan extends University {
 
 let Abdullahi = new UniversityOfIbadan('Ajibola Abdullah','Oyo state','231144')
 console.log(Abdullahi)
+
+
+//Feb 5 daily challenge
+class Agency{
+  constructor(name,brand){
+    this._name = name
+    this._brand = brand
+  }
+  get name(){
+    return this._name
+  }
+  get brand(){
+    return this._brand
+  }
+  sayHello(){
+    console.log(`Hello! My name is ${this._name} and I am made of ${this._brand}`)
+  }
+} 
+
+class Front extends Agency{
+  constructor(name,brand,tech){
+    super(name,brand)
+    this._tech = tech
+  }
+  get tech(){
+    return this._tech
+  }
+  sayHello(){
+    console.log(`Hello My name is ${this._name} and I am working on ${this._tech} team`)
+  }
+}
+
+class Back extends Agency{
+  constructor(name,brand,tech){
+    super(name,brand)
+    this._tech = tech 
+  }
+  get tech(){
+    return this._tech
+  }
+  sayHello(){
+    console.log(`Hello! My name is ${this._name} and I am working on the ${this._tech} team`)
+  }
+}
+
+let Atanda = new Front('Abdullah','Apple','Front-end!')
+let Mohammed = new Back('Mohammed','Amazon','Back-end!')
+console.log(Atanda)
+console.log(Mohammed)
+
+let Developers = [Atanda, Mohammed]
+for( person of Developers){
+  person.sayHello()
+}
