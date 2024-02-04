@@ -298,3 +298,36 @@ function showDate(){
   console.log(date)
 }
 showDate()
+
+//Feb 4 daily Challenge
+class University {
+  constructor(name){
+    this._name = name
+  }
+  get name(){
+    return this._name
+  }
+  rank(){
+    console.log(`${this._name} ranks in Africa`)
+  }
+}
+
+class UniversityOfIbadan extends University {
+  constructor(name,state,matric){
+    super(name)
+    this._state = state
+    this._matric = matric
+  }
+  get state(){
+    return this._state
+  }
+  get matric(){
+    return this._matric
+  }
+  rank(){
+    console.log(`${this._name} ranks 1st in Africa`)
+  }
+}
+
+let Abdullahi = new UniversityOfIbadan('Ajibola Abdullah','Oyo state','231144')
+console.log(Abdullahi)
