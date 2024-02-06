@@ -403,3 +403,10 @@ function houseThree(){
 houseOne()
 houseTwo()
 houseThree()
+
+//Feb 7 daily challenge
+function addNumsInArray(arr){
+  let sorted = arr.reduce( (acc,c) => acc + c , 0)
+  console.log(sorted)
+}
+addNumsInArray([10,2,30,70,90])
