@@ -385,3 +385,21 @@ let Developers = [Atanda, Mohammed]
 for( person of Developers){
   person.sayHello()
 }
+
+//Feb 6 daily challenge
+
+function houseOne(){
+  console.log('Letter delivered to house 1')
+}
+function houseTwo(){
+  setTimeout( () => console.log('Letter delivered to house 2'),5000 )
+}
+function houseThree(){
+  setTimeout( () => {
+    console.log('letter delivered to house 3')
+  },7000 )
+}
+
+houseOne()
+houseTwo()
+houseThree()
