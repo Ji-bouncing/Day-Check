@@ -409,4 +409,4 @@ function addNumsInArray(arr){
   let sorted = arr.reduce( (acc,c) => acc + c , 0)
   console.log(sorted)
 }
-addNumsInArray([10,2,30,70,90,20,50])
+addNumsInArray([10,2,30,70,90,20,50,90])
