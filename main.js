@@ -412,6 +412,6 @@ function addNumsInArray(arr){
 addNumsInArray([10,2,30,70,90,20,50,90])
 
 async function houseOne(){
-  const houseTwoWait = await houseOne()
+  const houseTwoWait = await houseOne();
   
 }
