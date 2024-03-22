@@ -411,7 +411,43 @@ function addNumsInArray(arr){
 }
 addNumsInArray([10,2,30,70,90,20,50,90])
 
-async function houseOne(){
-  const houseTwoWait = await houseOne();
-  
+//function houseOne(){
+//  return new promise( (resolve,reject) => {
+//    setTimeout( () => {
+    //  resolve('Got paid by house One')
+  //  },1000)
+//  })
+//}
+//function houseTwo(){
+//  return new promise( (resolve,reject) => {
+//    setTimeout( () => {
+  //    resolve('Got paid by house Two')
+//    },2000)
+ // })
+//}
+//function houseThree(){
+//  return new promise( (resolve, reject) => {
+//    setTimeout( () => {
+  //    resolve('Got paid by house three')
+   // },3000)
+//  })
+//}
+
+//async function getMoney(){
+  //const houseOneWait = await houseOne()
+//  const houseTwoWait = await houseTwo()
+//  const houseThreeWait = await houseThree()
+//  console.log(houseOneWait)
+//  console.log(houseTwoWait)
+ // console.log(houseThreeWait)
+//}
+//getMoney()
+
+
+
+async function getRandomPhotos(){  
+  const res = await fetch('https://dog.ceo/api/breeds/image/random')
+  const data = await res.json()
+  console.log(data)
 }
+getRandomPhotos()
