@@ -451,3 +451,29 @@ async function getRandomPhotos(){
   console.log(data)
 }
 getRandomPhotos()
+
+
+async function getMeme(){
+  const res = await fetch()
+  const data = await res.json()
+  console.log(data)
+}
+getMeme()
+
+
+let queue = []
+queue.push(2)
+queue.push(5)
+let i = queue.shift()
+alert(i)
+
+//Fetching a random image from dog ceo api
+
+function getRandomPhotos(){
+  fetch('https://dog.ceo/api/breeds/image/random')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data)
+  })
+}
+getRandomPhotos()
