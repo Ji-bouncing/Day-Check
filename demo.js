@@ -6,3 +6,13 @@ app.get('/',(request,response)=> {
 })
 
 console.log(module)
+const players ={
+  'messi':{
+    'name':'Lionel Messi',
+    'age':'29',
+    'role':'mid fielder'
+  }
+}
+app.get('/api',(request,response) => {
+  response.json(players)
+})
