@@ -10,7 +10,8 @@ const players ={
   'messi':{
     'name':'Lionel Messi',
     'age':'29',
-    'role':'mid fielder'
+    'role':'mid fielder',
+    'country':'brazil',
   }
 }
 app.get('/api',(request,response) => {
