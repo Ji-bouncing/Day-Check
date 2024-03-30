@@ -477,3 +477,5 @@ function getRandomPhotos(){
   })
 }
 getRandomPhotos()
+
+const sayHi = require(/demo.js)

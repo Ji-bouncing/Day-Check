@@ -17,3 +17,10 @@ const players ={
 app.get('/api',(request,response) => {
   response.json(players)
 })
+
+const sayHi = (name) => {
+  console.log(`Hello ${name}`);
+}
+sayHi('Maryam')
+
+module.exports = sayHi
