@@ -481,4 +481,14 @@ function getRandomPhotos(){
 }
 getRandomPhotos()
 
-const sayHi = require(/demo.js)
+
+const sayHead = () => {
+const random = Math.abs(Math.random())
+if(random < .5){
+  console.log('Head')
+}else{
+  console.log('Tail')
+}
+}
+
+sayHead()
