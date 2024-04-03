@@ -492,3 +492,10 @@ if(random < .5){
 }
 
 sayHead()
+
+const age = 10;
+if(age < 10){
+  console.log('You are a kid')
+}else{
+  console.log('You are a teen')
+}
