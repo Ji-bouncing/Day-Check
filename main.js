@@ -501,4 +501,4 @@ if(age < 10){
 }
 }
 
-checkAge(21)
+checkAge(11)
