@@ -23,5 +23,13 @@ label{
   color:red;
 }
 img{
-  width:300px;
+  width:200px;
+  height:100px;
+  padding-left:20px;
+}
+
+#img_container{
+  width:100vw;
+  overflow-x: scroll ;
+  white-space: nowrap;
 }
