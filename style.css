@@ -25,11 +25,12 @@ label{
 img{
   width:200px;
   height:100px;
-  padding-left:20px;
+  padding-left:10px;
 }
 
 #img_container{
   width:100vw;
   overflow-x: scroll ;
   white-space: nowrap;
+  
 }
